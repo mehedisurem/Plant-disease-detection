@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} {% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    <script src="https://kit.fontawesome.com/2d5c01f986.js" crossorigin="anonymous"></script>
+       {% block css %} {% endblock %}
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><span class="color-red">Micro</span>pocessor <span class="color-red">Gro</span>up-<span class="color-red">4</span></div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li>
+              <label for="btn-1" class="show">Project <i class="fa fa-light fa-angle-down"></i> </label>
+              <a href="#">Project</a>
+              <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="#">Hardware Setup</a></li>
+            <li>
+               <label for="btn-2" class="show_2">Survey <i class="fa fa-light fa-angle-down"></i></label> <!-- btn class added  -->
+               <a class="extra" href="#">Survey</a>
+              <input type="checkbox" id="btn-2">
+                <ul>
+                    <li ><label for="btn-3" class="show_3">Pre Test Survey <i class="fa fa-light fa-angle-down"></i></label>
+                    <a class="extra" href="">Pre Test Survey</a>
+                    <input type="checkbox" id="btn-3">
+                      <ul>
+                         <li><a href="">Responses</a> </li>
+                          <li><a href="">Questions</a> </li>
+                      </ul>
+                    </li>
+                    <li ><label for="btn-4" class="show_3">Post Test Survey <i class="fa fa-light fa-angle-down"></i></label>
+                    <a class="extra" href="">Post Test Survey</a>
+                    <input type="checkbox" id="btn-4">
+                      <ul>
+                          <li><a href="">Documentation</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+        <li><a href="">Perfomance</a></li>
+        <li><a href="">Simulation</a></li>
+        <li><a href="">Proposal</a></li>
+        <li><label for="btn-5" class="show_2">Components <i class="fa fa-light fa-angle-down"></i></label>
+            <a class="extra" href="">Components</a>
+            <input type="checkbox" id="btn-5">
+              <ul>
+                <li ><a href="">Parts</a></li>
+                <li ><a href="">Budget</a></li>
+              </ul>
+        </li>
+{#        <li>#}
+{#          <li><label for="btn-6" class="show_2">Block Diagram <i class="fa fa-light fa-angle-down"></i></label>#}
+{#            <a class="extra" href="">Block Diagram</a>#}
+{#            <input type="checkbox" id="btn-6">#}
+{#              <ul>#}
+{#                  <li class="block"><a href="">System Block Diagram</a></li>#}
+{#                  <li class="block"><a href="">Technical Block Diagram</a></li>#}
+{#              </ul>#}
+{#          </li>#}
+        </ul>
+        </li>
+        <li>
+          <label for="btn-7" class="show">Assignment <i class="fa fa-light fa-angle-down"></i></label>
+          <a href="#">Assignment</a>
+          <input type="checkbox" id="btn-7">
+          <ul>
+            <li>
+              <label for="btn-8" class="show_2">Mid <i class="fa fa-light fa-angle-down"></i></label>
+              <a class="extra" href="#">Mid</a>
+              <input type="checkbox" id="btn-8">
+              <ul>
+                <li ><a href="">Assignment 1</a></li>
+                <li ><a href="">Assignment 2</a></li>
+            </ul>
+            </li>
+            <li>
+              <label for="btn-9" class="show_2">Final <i class="fa fa-light fa-angle-down"></i></label>
+              <a class="extra" href="#">Final</a>
+              <input type="checkbox" id="btn-9">
+              <ul>
+                <li ><a href="">Assignment 1</a></li>
+                <li ><a href="">Assignment 2</a></li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+        <li>
+              <label for="btn-10" class="show">Presentation <i class="fa fa-light fa-angle-down"></i></label>
+              <a class="extra" href="#">Presentation</a>
+              <input type="checkbox" id="btn-10">
+              <ul>
+                <li>
+                  <label for="btn-11" class="show_2">Mid <i class="fa fa-light fa-angle-down"></i></label>
+                  <a class="extra" href="#">Mid</a>
+                  <input type="checkbox" id="btn-11">
+                  <ul>
+                    <li ><a href="">Slides</a></li>
+                    <li ><a href="">Video</a></li>
+                </ul>
+                </li>
+                <li>
+                  <label for="btn-12" class="show_2">Final <i class="fa fa-light fa-angle-down"></i></label>
+                  <a class="extra" href="#">Final</a>
+                  <input type="checkbox" id="btn-12">
+                  <ul>
+                    <li ><a href="">Slides</a></li>
+                    <li ><a href="">Video</a></li>
+                </ul>
+                </li>
+              </ul>
+        </li>
+        <li>
+          <a href="/">Project Overview</a>
+        </li>
+        <li>
+          <a href="/about">Our Team</a>
+        </li>
+      </ul>
+    </nav>
+
+        {% block body %}
+{#      <header>Responsive Drop-down Menu Bar</header>#}
+{#      <p>HTML and CSS (Media Query)#}
+{#        <i class="fa fa-light fa-angle-down"></i>#}
+{#      </p>#}
+        {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+  </body>
+</html>

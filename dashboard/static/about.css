@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css2?family=Bayon&family=Coiny&family=Kalam:wght@300&family=Noto+Serif:ital@1&family=Playball&family=Poppins:ital,wght@1,100&family=Sail&family=Signika:wght@600&family=Source+Sans+Pro:ital,wght@1,300&display=swap>);
+.about{
+    margin-top: 4vh;
+}
+ .about_text{
+    margin: 1vh ;
+    font-size: 18px;
+     padding: 12px;
+     font-weight: 400;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+h3 {
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.team-bg{
+    padding: 120px 0;
+    color: #fff;
+}
+.team-bg::before{
+
+    content: "";
+    background: #1b1b1b;
+    position: absolute;
+    bottom: -56vh;
+    top: 286px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+
+
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column{
+    background: #03D29F;
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+    height: 400px;
+    margin: 45px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+    transition: .3s;
+}
+.column::before{
+    content: "";
+    left: -7px;
+    top: -7px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-top: 7px solid #ffd166;
+    border-left: 7px solid #ffd166;
+    transition: .5s;
+}
+.column::after{
+    content: "";
+    right:  -7px;
+    bottom: -7px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-bottom: 7px solid #ffd166;
+    border-right: 7px solid #ffd166;
+    transition: .5s;
+}
+.column2{
+    background: #03D29F;
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+}
+.column:hover{
+    transform: scale(1.1);
+}
+
+.column:hover::before{
+
+    width: 0;
+    top: 0;
+    height: calc(100% - 7px);
+}
+.column:hover::after{
+
+    width: 0;
+    bottom: 0;
+    height: calc(100% - 7px);
+}
+.column  img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+.info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    /* flex-direction: column; */
+    gap: 10px;
+    transition: .5s;
+    transform-origin: bottom;
+    transition-delay: .5s;
+    transform: scaleY(0);
+}
+.column:hover .info{
+    transform: scaleY(1);
+}
+.info .name{
+    margin-top: 7vh;
+    bottom: 2vh;
+}
+.info .IUB-id{
+    margin-top: 2vh;
+    bottom: 1vh;
+}
+.info h2{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f0efeb;
+
+    /* font-family: 'Bayon', sans-serif; */
+/* font-family: 'Coiny', cursive; */
+ /* font-family: 'Kalam', cursive;  */
+/* font-family: 'Noto Serif', serif; */
+/* font-family: 'Playball', cursive; */
+ /* font-family: 'Poppins', sans-serif; */
+ /* font-family: 'Sail', cursive; */
+ /* font-family: 'Signika', sans-serif; */
+font-family: 'Source Sans Pro', sans-serif;
+}
+.info p{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 8px 5px;
+    padding: 4px;
+    color: #ffd166;
+    font-family: 'Poppins', sans-serif;
+}
+.info ul{
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.info ul li{
+    list-style: none;
+}
+.info ul li a{
+    display: block;
+    color: #f0efeb;
+    font-size: 24px;
+    transition: .3s;
+    margin-left:50px;
+
+}
+
+.info ul li:hover a{
+    transform: scale(1.1);
+    color: #ffd166;
+}
+@media screen and (max-width: 900px){
+    .column{
+        flex: 100%;
+        max-width: 450px;
+    }
+    .column2{
+        flex: 50%;
+        max-width: 480px;
+    }
+
+    .team-bg::before{
+        bottom: -153vh;
+    }
+    .info ul li a{
+        margin-left:70px;
+
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .column{
+        flex: 50%;
+        max-width: 480px;
+    }
+    .column2{
+        flex: 50%;
+        max-width: 480px;
+    }
+    .team-bg::before{
+        bottom: -156vh;
+    }
+    .info ul li a{
+        margin-left:70px;
+
+    }
+}

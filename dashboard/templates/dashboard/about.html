@@ -1,0 +1,101 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %} About Us{% endblock %}
+{% block css %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+     <section class="about">
+        <h1 class="about_text">The main purpose of this team is to create groundbreaking ideas using microprocessor and make life easier for every individual. Because of the availability of low cost, low power and small weight, computing capability and vast application in every field , a microrocessor is making everyday life smoother for all of us. With passing time, microprocessor components have improved with our society's needs . Such as automation of boring and dangerous manual labor , advances in medical technology and weather forecasting and many more. It is adapting according to our societal requirements.</h1>
+        <h3> Our Team</h3>
+        <div class="team-bg">
+            {% load static %}
+            <div class="row">
+                <div class="column">
+                    <img src="{% static '/Images/mehediSurem.jpg' %}" alt="">
+                            <div class="info">
+                                <h2 class="name">Mehedi Surem</h2> <br>
+                                <h2 class="IUB-id">2030069</h2>
+                                <p>Hello, I'm Mehedi Surem Currently, I'm completing my Bachelor in Computer Science at Independent University Bangladesh. visit my portfolio to learn more <a href="https://mehedisurem.netlify.app/" style="color: aqua; ">about me</a> </p>
+                                <ul>
+                                <li><a href=""><i class="fa fa-brands fa-github"></i></a></li>
+                                <li><a href=""><i class="fa  fa-brands fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-brands fa-researchgate"></i></a></li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="column">
+                    <img src="{% static '/Images/sakura.jpg' %}" alt="">
+                            <div class="info">
+                                <h2 class="name">Mehenaz Faria</h2> <br>
+                                <h2 class="IUB-id">2022540</h2>
+                                <p> Nani Ube amma?</p>
+                                <ul>
+                                <li><a href=""><i class="fa fa-brands fa-github"></i></a></li>
+                                <li><a href=""><i class="fa  fa-brands fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-brands fa-researchgate"></i></a></li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="column">
+                    <img src="{% static '/Images/istiaq.jpg' %}" alt="">
+                            <div class="info">
+                                <h2 class="name">Istiaq Ahmed</h2> <br>
+                                <h2 class="IUB-id">2030096</h2>
+                                <p>Hello, Istiaq Ahmed here. I'm currently enrolled in Independent University's B.Sc. in CSE program in Bangladesh. Actually, I'm quite interested in Web development and networking, and I want to constantly develop my IT knowledge.</p>
+                                <ul>
+                                <li><a href="https://github.com/AsifTalukdar"><i class="fa fa-brands fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/md-istiaq-ahmed-14b07b258"><i class="fa  fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.researchgate.net/profile/Istiaq-Ahmed-11"><i class="fa fa-brands fa-researchgate"></i></a></li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="{% static '/Images/muhaiminul.jpg' %}" alt="">
+                            <div class="info">
+                                <h2 class="name" >Muhaiminul Islam</h2> <br>
+                                <h2 class="IUB-id">2030989</h2>
+                                <p>Hello! This is Muhaiminul Islam Rafi .I'm doing an undergraduate program BSc in CSE at Independent University, Bangladesh. Moreover I Want to develop my skills and so on as a Programmer or software developer! And want to explore more and more!</p>
+                                <ul>
+                                <li><a href="https://github.com/muhaiminulIslam140898?fbclid=IwAR1tbJiGe-nvtBF6qtlOSywG42MD9yGgNmrWMwB4wGiuMcmplJ01QeQ0iEs"><i class="fa fa-brands fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/md-muhaiminul-islam-37b123266/?fbclid=IwAR0gVcz86-PKmmRR0gC3flqTEWkIcK42rllY-64jCGNh7pW3p7fgiseowys"><i class="fa  fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.researchgate.net/profile/Muhaiminul-Rafi?fbclid=IwAR14dsw5svZxad54lCJZsf7v0-Bxi11mGUtMdt2y5ygatRNPO4h6ka0l_UY"><i class="fa fa-brands fa-researchgate"></i></a></li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="column">
+                    <img src="{% static '/Images/sadia.jpg' %}" alt="">
+                            <div class="info">
+                                <h2 class="name"> Sadia Akter</h2> <br>
+                                <h2 class="IUB-id">2022719</h2>
+                                <p>I'm Sadia Akter, student at independent University, Bangladesh. Now I'm a beginner software and web developer. I'm always looking for new ways to learn and improve my skills.</p>
+                                <ul>
+                                <li><a href="https://github.com/Sadia250"><i class="fa fa-brands fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/nusrat-sadia-419a2221a"><i class="fa  fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.researchgate.net/profile/Sadia-Akter-22?ev=hdr_xprf&_sg=uOVXTCjvtw1pc6gUxqOrMvcDKJT8Ta4YfWx6kmt6x0RgnPMU_Nl5voWqbLT-aLYhj5omXopFrjgtayDARjoc7kpx"><i class="fa fa-brands fa-researchgate"></i></a></li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="column">
+                    <img src="{% static '/Images/jahedul.jpg' %}" alt="">
+                            <div class="info">
+                                <h2 class="name">Jahedul Islam</h2> <br>
+                                <h2 class="IUB-id">1910343</h2>
+                                <p>Hello, This is Jahedul Islam. I am currently studying my undergrad program B.Sc in CSE at Independent University, Bangladesh. Actually, I have a keen interest in Database Administration and Networking and I want to improve my IT skills day by day.</p>
+                                <ul>
+                                <li><a href="https://github.com/j4heds"><i class="fa fa-brands fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jahedul-islam-982778202/"><i class="fa  fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.researchgate.net/profile/Jahedul-Islam-8"><i class="fa fa-brands fa-researchgate"></i></a></li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

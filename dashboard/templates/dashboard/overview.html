@@ -1,0 +1,17 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %} Project Overview {% endblock %}
+{% block css %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'overview-style.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+        <div  class="sorry-section">
+            <img src="{% static '/Images/sorry.gif' %}" alt=""> <br>
+            <h2> Sorry! We haven't selected our project topic. <br> We will update this section as soon as we select our topic.</h2>
+    </div>
+
+{% endblock %}
