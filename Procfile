@@ -1,0 +1,1 @@
+web: gunicorn microprocessor_project.wsgi --log-file -
