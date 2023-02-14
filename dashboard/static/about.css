@@ -185,6 +185,19 @@ font-family: 'Source Sans Pro', sans-serif;
     color: #ffd166;
 }
 @media screen and (max-width: 900px){
+    .team-bg::before{
+
+    content: "";
+    background: #1b1b1b;
+    position: absolute;
+    bottom: -186vh;
+    top: 490px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+
+
+}
     .column{
         flex: 100%;
         max-width: 450px;
@@ -194,9 +207,7 @@ font-family: 'Source Sans Pro', sans-serif;
         max-width: 480px;
     }
 
-    .team-bg::before{
-        bottom: -153vh;
-    }
+
     .info ul li a{
         margin-left:70px;
 
@@ -204,6 +215,17 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media screen and (max-width: 1200px){
+    .team-bg::before {
+
+        content: "";
+        background: #1b1b1b;
+        position: absolute;
+        bottom: -136vh;
+        top: 390px;
+        left: 0;
+        right: 0;
+        transform: skewY(-3deg);
+    }
     .column{
         flex: 50%;
         max-width: 480px;
@@ -212,9 +234,7 @@ font-family: 'Source Sans Pro', sans-serif;
         flex: 50%;
         max-width: 480px;
     }
-    .team-bg::before{
-        bottom: -156vh;
-    }
+
     .info ul li a{
         margin-left:70px;
 
