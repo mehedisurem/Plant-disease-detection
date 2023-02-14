@@ -1,1 +1,1 @@
-web: gunicorn microprocessor_project.wsgi
+web: gunicorn microprocessor_project.wsgi --log-file--
