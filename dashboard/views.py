@@ -11,3 +11,6 @@ def about(request):
     return render(request, 'dashboard/about.html')
 def pdf(request):
     return render(request, 'dashboard/test.html')
+
+def sadia(request):
+    return render(request, 'dashboard/sadia.html')

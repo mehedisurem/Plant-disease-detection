@@ -1,0 +1,53 @@
+.user{
+    margin-left: 5vh;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5vh;
+}
+
+.pdf{
+    height: 70vh;
+    width: 48vw;
+}
+.grid-box{
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: "pdf-file pdf-summary";
+}
+.pdf-file{
+    grid-area:pdf-file;
+    padding: .5vh .5vw;
+    border-style: solid;
+
+}
+.pdf-summary{
+    grid-area:pdf-summary;
+    margin: 2vh 2vw;
+    padding: 5vw 5vw;
+
+}
+
+@media all and (max-width:990px){
+
+    .grid-box{
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-areas: "pdf-file"
+                            " pdf-summary";
+}
+.pdf-file{
+    grid-area:pdf-file;
+    padding: .5vh .2vw;
+    border-style: solid;
+
+}
+.pdf-summary{
+    grid-area:pdf-summary;
+    margin: 1vh 1vw;
+    padding: 2vw 2vw;
+
+}
+
+}
