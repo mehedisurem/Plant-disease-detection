@@ -1,0 +1,13 @@
+.sorry-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sorry-section img{
+    display: block;
+    margin: 35vh 5vw;
+    width: 350px;
+    height: 300px;
+    border-radius:15px;
+}

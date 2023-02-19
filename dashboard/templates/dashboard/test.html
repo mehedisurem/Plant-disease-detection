@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .responsive-iframe{
+            border: solid;
+            width: 900px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+        {% load static %}
+
+<iframe
+
+  class="responsive-iframe"
+  src="{% static 'l1.pdf' %}"
+ ></iframe>
+</body>
+</html>
