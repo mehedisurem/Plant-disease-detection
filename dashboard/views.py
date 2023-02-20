@@ -14,3 +14,6 @@ def pdf(request):
 
 def sadia(request):
     return render(request, 'dashboard/sadia.html')
+
+def mehnaz(request):
+    return render(request, 'dashboard/mehnaz.html')

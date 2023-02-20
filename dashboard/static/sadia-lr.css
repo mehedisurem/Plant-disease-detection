@@ -49,5 +49,8 @@
     padding: 2vw 2vw;
 
 }
-
+.pdf{
+    height: 70vh;
+    width: 96vw;
+}
 }
