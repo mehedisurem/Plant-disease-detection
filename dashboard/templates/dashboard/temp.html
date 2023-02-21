@@ -1,22 +1,9 @@
-{% extends 'dashboard/navbar.html' %}
-{% block title %}Literature review-Mehnaz {% endblock %}
-{% block css %}
-
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'mehenaz.css' %}">
-
-
-{% endblock %}
-{% block body %}
-    {% load static %}
-        <div class="Litrature">
-
-        <h1 class="user"><span class="red">Litera</span>ture <span class="red">Re</span>view - Mehenaz</h1>
+<div class="Litrature">
+        <h1 class="user"><span class="red">Litera</span>ture <span class="red">Re</span>view- Mehnaz</h1>
         <div class="grid-box">
             <div class="pdf-file">
-                <iframe class= "pdf" src="{% static 'PDF/mehnaz-L1 .pdf' %}">
+                <iframe class= "pdf" src="{% static 'PDF/mehnaz-L1 .pdf' %}" >
                 </iframe>
-{#                <h5> I have highlighted important sections to help you understand</h5>#}
             </div>
             <div class="pdf-summary">
                 <h2>Smart Plant: A Mobile Application for Plant Disease Detection</h2>
@@ -29,19 +16,19 @@
                     make any growth in the field of agriculture last few years. We have to utilize their strength to detect more plant disease in order to grow more plants.
                     In Purwokerto, most of the farmers plant only tomatoes. That's why we had to limit this research for tomato diseases only.
                     We have found out most of them used a deep structure of CNN to reach a high accuracy.
-                    But we proposed our own CNN model with less complexity but got 89% accuracy and also it is our plan to develop it for other plants also.</summary>
+                    But we proposed our own CNN model with less complexity but got 89% accuracy and also it is our plan to develop it for other plants also.
+                </summary>
 
                     <h3>Reference:</h3>
                     <h4>
                         <a href="https://www.researchgate.net/publication/368408309_Smart_Plant_A_Mobile_Application_for_Plant_Disease_Detection">
                             <ul>
-                                <li class="ref">1. Hidayatullah, T., Alvionita, L. 2020. “Usia petani menua, Jokowi ajak anak muda tekuni pertanian organik”. Lokadata, pp   </li>
-                                <li class="ref">2.Kusumaningrum, S. I., 2019. “Pemanfaatan Sektor Pertanian sebagai Penunjang Pertumbuhan Perekonomian Indonesia“,Jurnal Transaksi. pp. 1-10</li>
-                                <li class="ref">3.LeCun, Y., Bengio, Y., Hinton, G., 2015. “Deep learning”, Nature 521, p.436–444. https://doi.org/10.1038/nature14539</li>
+                                <li> Hidayatullah, T., Alvionita, L. 2020. “Usia petani menua, Jokowi ajak anak muda tekuni pertanian organik”. Lokadata, pp   </li>
+                                <li>Kusumaningrum, S. I., 2019. “Pemanfaatan Sektor Pertanian sebagai Penunjang Pertumbuhan Perekonomian Indonesia“,Jurnal Transaksi. pp. 1-10</li>
+                                <li>LeCun, Y., Bengio, Y., Hinton, G., 2015. “Deep learning”, Nature 521, p.436–444. https://doi.org/10.1038/nature14539</li>
                             </ul>
                         </a>
-                       </h4>
+                    </h4>
             </div>
         </div>
     </div>
-{% endblock %}

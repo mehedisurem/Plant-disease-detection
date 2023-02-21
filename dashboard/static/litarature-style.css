@@ -16,7 +16,11 @@ font-family: 'Yantramanav', sans-serif; */
     margin-bottom: 5vh;
     font-family: 'Courgette', cursive;
 }
-
+iframe body {
+    background: red;
+    background-color: red;
+    color: #006b1b;
+}
 .pdf{
     height: 67vh;
     width: 48vw;
