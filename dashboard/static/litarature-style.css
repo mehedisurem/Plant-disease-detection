@@ -19,7 +19,7 @@ font-family: 'Yantramanav', sans-serif; */
 
 .pdf{
     height: 67vh;
-    width: 48vw;
+    width: 40vw;
 }
 .grid-box{
         height: 70vh;
@@ -90,7 +90,7 @@ font-family: 'Yantramanav', sans-serif; */
 }
 .pdf{
         height: 65vh;
-        width: 90vw;
+        width: 86vw;
 
  }
 .grid-box{
@@ -102,7 +102,6 @@ font-family: 'Yantramanav', sans-serif; */
 }
 .pdf-file{
     grid-area:pdf-file;
-
     border-style: solid;
     height: 77vh;
     width: 92vw;
