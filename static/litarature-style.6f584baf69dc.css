@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,800&family=Courgette&family=Labrada:ital,wght@1,500&family=Patrick+Hand&family=Poppins:ital,wght@1,500&family=Yantramanav:wght@500&display=swap');
+
+/* font-family: 'Alegreya', serif;
+font-family: 'Courgette', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Labrada', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Yantramanav', sans-serif; */
+.red{
+    color: red;
+}
+.user{
+    margin-left: 5vh;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5vh;
+    font-family: 'Courgette', cursive;
+}
+
+.pdf{
+    height: 67vh;
+    width: 48vw;
+}
+.grid-box{
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: "pdf-file pdf-summary";
+}
+.pdf-file{
+    grid-area:pdf-file;
+    padding: .5vh .5vw;
+    border-style: solid;
+    height: 76vh;
+    width: 48vw;
+    margin-top: 2vh;
+
+}
+.pdf-summary{
+    grid-area:pdf-summary;
+    margin: 2vh 2vw;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 2vh;
+
+}
+.pdf-summary h2{
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    color: #3C8DBC;
+}
+.pdf-summary h3{
+    font-family: 'Courgette', cursive;
+    font-size: 22px;
+    line-height: 24px;
+}
+.pdf-summary summary{
+    padding-left: 2vw;
+    padding-right: 0;
+    padding-top: 2vh;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'poppins', serif;
+    padding-bottom: 1.5vh;
+
+}
+.links{
+    padding-left: 5vw;
+    color: #F38E85;
+    text-decoration: underline;
+}
+.pdf-file h5{
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0;
+}
+@media all and (max-width:990px){
+
+.user{
+    margin-left: 5vh;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 2vh;
+    font-family: 'Courgette', cursive;
+}
+.pdf{
+        height: 65vh;
+        width: 90vw;
+
+ }
+.grid-box{
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-areas: "pdf-file"
+                            " pdf-summary";
+}
+.pdf-file{
+    grid-area:pdf-file;
+    padding: .5vh .2vw;
+    border-style: solid;
+    height: 77vh;
+    width: 92vw;
+    margin: 1vh 3vw;
+    padding: 20px;
+
+}
+.pdf-summary{
+    grid-area:pdf-summary;
+    margin: 1vh 1vw;
+    padding: 2vw 2vw;
+    width: 90vw;
+    height: auto;
+
+}
+
+
+}

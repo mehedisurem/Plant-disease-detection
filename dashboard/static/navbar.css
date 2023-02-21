@@ -80,6 +80,14 @@ nav ul ul li{
   display: list-item;
   border-bottom: 1px solid rgba(0,0,0,0.3);
 }
+nav ul ul .diagram{
+  position: relative;
+  margin: 0px;
+  width: 256px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
 nav ul ul .block{
   position: relative;
   margin: 0px;

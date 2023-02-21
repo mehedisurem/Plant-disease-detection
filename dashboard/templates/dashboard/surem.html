@@ -1,0 +1,51 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %} {% endblock %}
+{% block css %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'litarature-style.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+            <div class="Litrature">
+
+        <h1 class="user"><span class="red">Litera</span>ture <span class="red">Re</span>view - Surem</h1>
+        <div class="grid-box">
+            <div class="pdf-file">
+                <iframe class= "pdf" src="{% static 'PDF/surem-L1.pdf' %}">
+                </iframe>
+                <h5> I have highlighted important sections to help you understand</h5>
+            </div>
+            <div class="pdf-summary">
+                <h2>Data Collection and Analysis Using IOT Device and Machine Learning Techniques forDisease Classification on Soybean Plant</h2>
+                <h3>Summary</h3>
+                <summary>Increasing the yield and better quality of crops is the major goal of the agriculturalsector. Plantgrowth is a major requirement for farmers because it provides a pathway for their livelihood. The
+                    best method for predicting and getting precise results for plant disease detection may be image
+                    processing. Deep convolutional neural networks, which are the foundation of this project,
+                    improve training effectiveness and accuracy. The goal is to identify various plant infections by
+                    looking at pictures. We can precisely identify the plant disease by using the CNN Algorithm.
+                    Currently, a lot of research is being done on how to make agriculture more productive and less
+                    expensive. Early detection of plant diseases and pests increases yield while lowering costs. It is
+                    advantage to use near infrared (NIR) imaging to spot plant diseases. In order to collect NIR
+                    images of healthy and diseased leaves in their natural habitat, this study. Eight Convolutional
+                    Neural Network (CNN) models are used to test the dataset, with train-test splits ranging from
+                    10:90 to 90:10. From the 70:30 split onward, the evaluated models attained their highest training
+                    and test accuracies. In every train-test split, exception outperformed all other models and
+                    achieved 100% accuracy, precision, and recall in the 80:20 train-test split.</summary>
+
+                    <h3>Reference:</h3>
+                    <h4><a class="links" href="https://www.researchgate.net/publication/361351168_Data_Collection_and_Analysis_Using_IOT_Device_and_Machine_Learning_Techniques_for_Disease_Classification_on_Soybean_Plant">
+                        <ul>
+                                <li class="ref">1. Arjun, K. M. (2013). Indian agriculture status, importance and role in Indian economy. 4(4), 343-346
+                                </li>
+                                <li class="ref">2.Dalwai, A. (2018). Report of the Committee on Doubling Farmers Income. Post-production interventions:Agricultural Marketing</li>
+                                <li class="ref">3.Arora, J.; Agrawal, U. Classification of Maize leaf diseases from healthy leaves using Deep Forest.J. Artif. Intell.Syst. 2020,2</li>
+                            </ul>
+
+                    </a></h4>
+            </div>
+        </div>
+    </div>
+{% endblock %}
