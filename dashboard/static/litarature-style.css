@@ -16,11 +16,7 @@ font-family: 'Yantramanav', sans-serif; */
     margin-bottom: 5vh;
     font-family: 'Courgette', cursive;
 }
-iframe body {
-    background: red;
-    background-color: red;
-    color: #006b1b;
-}
+
 .pdf{
     height: 67vh;
     width: 48vw;
@@ -43,10 +39,7 @@ iframe body {
 .pdf-summary{
     grid-area:pdf-summary;
     margin: 2vh 2vw;
-    padding-top: 2vh;
-    padding-bottom: 5vh;
-    padding-left: 5vw;
-    padding-right: 2vh;
+    padding: 2vh 2vh 5vh 2vw;
 
 }
 .pdf-summary h2{
@@ -64,13 +57,10 @@ iframe body {
     line-height: 24px;
 }
 .pdf-summary summary{
-    padding-left: 2vw;
-    padding-right: 0;
-    padding-top: 2vh;
     font-size: 20px;
     line-height: 25px;
     font-family: 'poppins', serif;
-    padding-bottom: 1.5vh;
+    padding: 2vh 0 1.5vh 2vw;
 
 }
 .links{
@@ -112,7 +102,7 @@ iframe body {
 }
 .pdf-file{
     grid-area:pdf-file;
-    padding: .5vh .2vw;
+
     border-style: solid;
     height: 77vh;
     width: 92vw;
