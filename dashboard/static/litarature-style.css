@@ -22,7 +22,7 @@ font-family: 'Yantramanav', sans-serif; */
     width: 40vw;
 }
 .grid-box{
-        height: 70vh;
+        height: auto;
         display: grid;
         grid-template-columns: 50vw 50vw;
         grid-template-areas: "pdf-file pdf-summary";
@@ -34,6 +34,7 @@ font-family: 'Yantramanav', sans-serif; */
     height: 76vh;
     width: 48vw;
     margin-top: 2vh;
+    margin-left: 3vw;
 
 }
 .pdf-summary{
@@ -89,29 +90,30 @@ font-family: 'Yantramanav', sans-serif; */
     font-family: 'Courgette', cursive;
 }
 .pdf{
-        height: 65vh;
+        height: 70vh;
         width: 86vw;
 
  }
 .grid-box{
-        height: 70vh;
+        height: auto;
         display: grid;
         grid-template-columns: 100vw;
         grid-template-areas: "pdf-file"
                             " pdf-summary";
+        margin: 3vh 2vw;
 }
 .pdf-file{
     grid-area:pdf-file;
     border-style: solid;
-    height: 77vh;
+    height: auto;
     width: 92vw;
-    margin: 1vh 3vw;
+    /*margin: 1vh 3vw;*/
     padding: 20px;
 
 }
 .pdf-summary{
     grid-area:pdf-summary;
-    margin: 1vh 1vw;
+    /*margin: 1vh 1vw;*/
     padding: 2vw 2vw;
     width: 90vw;
     height: auto;
