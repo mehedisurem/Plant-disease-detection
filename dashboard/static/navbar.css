@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 body{
   background: #f2f2f2;
 }
@@ -74,7 +75,7 @@ nav ul li:hover > ul{
 }
 nav ul ul li{
   position: relative;
-  margin: 0px;
+  margin: 0;
   width: 180px;
   float: none;
   display: list-item;
@@ -82,7 +83,7 @@ nav ul ul li{
 }
 nav ul ul .diagram{
   position: relative;
-  margin: 0px;
+  margin: 0;
   width: 256px;
   float: none;
   display: list-item;
@@ -90,7 +91,7 @@ nav ul ul .diagram{
 }
 nav ul ul .block{
   position: relative;
-  margin: 0px;
+  margin: 0;
   width: 249px;
   float: none;
   display: list-item;
@@ -112,15 +113,24 @@ nav ul ul ul li{
   font-size: 15px;
   margin-left: 40px;
 }
-
+@media all and (max-width: 480px) {
+  nav .logo {
+    padding-right: 32px;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 21px;
+  }
+}
 @media all and (max-width: 968px) {
   nav ul{
-    margin-right: 0px;
+    margin-right: 0;
     float: left;
   }
   nav .logo{
+    padding-right: 32px;
     padding-left: 30px;
     width: 100%;
+    font-size:27px;
   }
   .show + a, ul{
     display: none;
@@ -181,7 +191,7 @@ nav ul ul ul li{
   }
   nav ul ul{
     top: 70px;
-    border-top: 0px;
+    border-top: 0;
     float: none;
     position: static;
     display: none;
@@ -212,7 +222,7 @@ nav ul ul ul li{
   }
   nav ul ul li{
 
-    border-bottom: 0px;
+    border-bottom: 0;
   }
   .color-red{
     color: red;
@@ -220,7 +230,7 @@ nav ul ul ul li{
   span.cancel:before{
     content: '\f00d';
   }
-}
+
 .content{
   z-index: -1;
   position: absolute;
@@ -237,4 +247,5 @@ header{
 p{
   font-size: 30px;
   font-weight: 500;
+}
 }

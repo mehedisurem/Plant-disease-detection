@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,800&family=Courgette&family=Labrada:ital,wght@1,500&family=Patrick+Hand&family=Poppins:ital,wght@1,500&family=Yantramanav:wght@500&display=swap');
+
+/* font-family: 'Alegreya', serif;
+font-family: 'Courgette', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Labrada', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Yantramanav', sans-serif; */
+.mn{
+    margin-top: 2vh;
+}
+.cText{
+    text-align: center;
+}
+.survey{
+    margin-top: 2vh;
+    border-radius: 15px;
+}
+.survey h1{
+    padding: 1vh 0;
+}
+.question{
+    margin: 3vh 22vw;
+    width: 55vw;
+    height: 74vh;
+}
+.typeWriter{
+
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+    typing 3.5s steps(7),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.redT{
+    color: red;
+}
+
+ @media all and (max-width:950px){
+
+    .typeWriter{
+        font-size: 28px;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        100% { border-color: orange; }
+      }
+
+    .mn{
+        margin-top: 15vh;
+    }
+    .question{
+        margin: 3vh 10vw;
+        width: 70vw;
+        height: 74vh;
+    }
+
+}
+
+@media all and (max-width:450px){
+
+    .typeWriter{
+        font-size: 20px;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        100% { border-color: orange; }
+      }
+
+    .question{
+        margin: 3vh 4vw;
+        width: 90vw;
+        height: 74vh;
+    }
+}

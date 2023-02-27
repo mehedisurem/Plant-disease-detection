@@ -194,7 +194,7 @@ font-family: 'Source Sans Pro', sans-serif;
     top: 490px;
     left: 0;
     right: 0;
-    transform: skewY(-3deg);
+    transform: none;
 
 
 }
@@ -224,7 +224,7 @@ font-family: 'Source Sans Pro', sans-serif;
         top: 390px;
         left: 0;
         right: 0;
-        transform: skewY(-3deg);
+        transform: none;
     }
     .column{
         flex: 50%;

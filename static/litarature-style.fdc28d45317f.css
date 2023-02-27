@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,800&family=Courgette&family=Labrada:ital,wght@1,500&family=Patrick+Hand&family=Poppins:ital,wght@1,500&family=Yantramanav:wght@500&display=swap');
+
+/* font-family: 'Alegreya', serif;
+font-family: 'Courgette', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Labrada', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Yantramanav', sans-serif; */
+.red{
+    color: red;
+}
+.user{
+    margin-left: 5vh;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5vh;
+    font-family: 'Courgette', cursive;
+}
+
+.pdf{
+    height: 67vh;
+    width: 40vw;
+}
+.grid-box{
+        height: auto;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: "pdf-file pdf-summary";
+}
+.grid-box-2{
+        height: auto;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: "pdf-summary pdf-file " ;
+}
+.pdf-file{
+    grid-area:pdf-file;
+    padding: .5vh .5vw;
+    /*border-style: solid;*/
+    height: 76vh;
+    width: 48vw;
+    margin-top: 2vh;
+    margin-left: 3vw;
+
+}
+.pdf-summary{
+    grid-area:pdf-summary;
+    margin: 2vh 2vw;
+    padding: 2vh 2vh 5vh 2vw;
+
+}
+.pdf-summary h2{
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    color: #3C8DBC;
+    margin-bottom: 30px;
+}
+.pdf-summary h3{
+    font-family: 'Courgette', cursive;
+    font-size: 22px;
+    line-height: 24px;
+}
+.pdf-summary summary{
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'poppins', serif;
+    padding: 2vh 0 1.5vh 2vw;
+
+}
+.links{
+    padding-left: 5vw;
+    color: #F38E85;
+    text-decoration: underline;
+}
+
+.ref{
+    list-style: none;
+    padding-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/*.typewriter{*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+
+/*    animation: typing 9s steps(50), cursor .4s*/
+/*                step-end infinite alternate;*/
+/*}*/
+/*@keyframes cursor {*/
+/*        50% { border-color: transparent}*/
+/*}*/
+/*@keyframes typing {*/
+/*        from { width: 0}*/
+/*}*/
+@media all and (max-width:990px){
+
+.user{
+    margin-left: 5vh;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 2vh;
+    font-family: 'Courgette', cursive;
+}
+.pdf{
+        height: 70vh;
+        width: 86vw;
+
+ }
+.grid-box{
+        height: auto;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-areas: "pdf-file"
+                            " pdf-summary";
+        margin: 3vh 2vw;
+}
+.pdf-file{
+    grid-area:pdf-file;
+    border-style: solid;
+    height: auto;
+    width: 92vw;
+    /*margin: 1vh 3vw;*/
+    padding: 20px;
+
+}
+.pdf-summary{
+    grid-area:pdf-summary;
+    /*margin: 1vh 1vw;*/
+    padding: 2vw 2vw;
+    width: 90vw;
+    height: auto;
+
+}
+
+
+}

@@ -1,0 +1,19 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %}System Block Diagram {% endblock %}
+{% block css %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'survey.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+    <div class="survey">
+        <h1 Class="typeWriter cText"><i class="redT">Sur</i><i>vey </i><i class="redT">Fo</i><i>rm</i></h1>
+        <iframe class="question" src="https://forms.gle/ZvBt956cXFLU4QQw8" ></iframe>
+
+    </div>
+
+   
+{% endblock %}

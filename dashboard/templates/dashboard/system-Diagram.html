@@ -1,0 +1,18 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %}System Block Diagram {% endblock %}
+{% block css %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'system-d.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+    <div class="mn">
+        <h1 Class="typeWriter cText"><i class="redT"> Sys</i><i>tem </i><i class="redT">Blo</i><i>ck</i><i class="redT"> Dia</i><i>gram!</i></h1>
+
+        <img class="img-diagram" src="{% static '/Images/system.png' %}" alt="">
+    </div>
+
+{% endblock %}

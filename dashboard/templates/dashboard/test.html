@@ -1,23 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .responsive-iframe{
-            border: solid;
-            width: 900px;
-            height: 600px;
-        }
-    </style>
-</head>
-<body>
-        {% load static %}
+{% extends 'dashboard/navbar.html' %}
+{% block title %} Project Overview {% endblock %}
+{% block css %}
 
-<iframe
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'test.css' %}">
+{% endblock %}
+{% block body %}
+    {% load static %}
+        <div class="main">
+        <div>
+            <img class="plant_img" src="{% static '/Images/plant.png' %}" alt="">
+        </div>
+        <div class="content2">
+            <h1 class="title">Topics: plant disease detection Robot</h1>
+            <h2>Descriptions: </h2>
+            <h4>Agriculture productivity is an important factor in economic growth. This is one of
+                the reasons that plant disease detection is essential in the sector of agriculture, as
+                the occurrence of illness in plants is extremely common. If necessary precautions
+                are not followed in this region, plants suffer major consequences, which have an
+                impact on the quality, quantity, or productivity of the corresponding products.
+                Agriculture productivity is an important factor in economic growth. This is one of
+                the reasons that plant disease detection is essential in the sector of agriculture, as
+                the occurrence of illness in plants is extremely common. If necessary precautions
+                are not followed in this region, plants suffer major consequences, which have an
+                impact on the quality, quantity, or productivity of the primary goods.</h4>
+            <h2>Goals and benefits:</h2>
 
-  class="responsive-iframe"
-  src="{% static 'l1.pdf' %}"
- ></iframe>
-</body>
-</html>
+            <h3>
+                By utilizing automation in agriculture, several improvements are made to the
+                sector while also helping farmers in time and money benefits.There are so many
+                benefits like:
+
+                <ul>
+                    <li>1. The robots can operate with tighter tolerances (so that every round is at
+                        full field capacity), they offer less mistakes and at greater speeds, and the
+                        machines can properly perceive the disease. They also do not get ill, tired,
+                        or require breaks.</li>
+                    <li>2. Robots may protect human employees from the risks associated with
+                        handling chemicals by hand and using a high-pressure spraying system.
+                        They can also cut the amount of pesticides used on farms by up to 80%.</li>
+                    <li>3. The robots can be used in various fields in agriculture.</li>
+                    <li>4. Trees, rocks, ponds, and other obstacles are simply navigated by the robots.</li>
+                    <li>5. In the future, the robots can do more or other tasks.</li>
+
+                </ul>
+            </h3>
+        </div>
+        </div>
+{% endblock %}

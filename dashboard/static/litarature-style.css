@@ -27,10 +27,16 @@ font-family: 'Yantramanav', sans-serif; */
         grid-template-columns: 50vw 50vw;
         grid-template-areas: "pdf-file pdf-summary";
 }
+.grid-box-2{
+        height: auto;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: "pdf-summary pdf-file " ;
+}
 .pdf-file{
     grid-area:pdf-file;
     padding: .5vh .5vw;
-    border-style: solid;
+    /*border-style: solid;*/
     height: 76vh;
     width: 48vw;
     margin-top: 2vh;
@@ -66,20 +72,34 @@ font-family: 'Yantramanav', sans-serif; */
 }
 .links{
     padding-left: 5vw;
-    color: #F38E85;
-    text-decoration: underline;
+    /*color: #F38E85;*/
+    text-decoration: none;
+    color: #A1B4C2;
+
 }
-.pdf-file h5{
-    text-align: center;
-    font-size: 24px;
-    padding: 10px 0;
-}
+
 .ref{
     list-style: none;
     padding-left: 30px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
+
+
+
+/*.typewriter{*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+
+/*    animation: typing 9s steps(50), cursor .4s*/
+/*                step-end infinite alternate;*/
+/*}*/
+/*@keyframes cursor {*/
+/*        50% { border-color: transparent}*/
+/*}*/
+/*@keyframes typing {*/
+/*        from { width: 0}*/
+/*}*/
 @media all and (max-width:990px){
 
 .user{
@@ -90,11 +110,11 @@ font-family: 'Yantramanav', sans-serif; */
     font-family: 'Courgette', cursive;
 }
 .pdf{
-        height: 70vh;
+        height: 60vh;
         width: 86vw;
 
  }
-.grid-box{
+.grid-box,.grid-box-2{
         height: auto;
         display: grid;
         grid-template-columns: 100vw;
@@ -104,12 +124,11 @@ font-family: 'Yantramanav', sans-serif; */
 }
 .pdf-file{
     grid-area:pdf-file;
-    border-style: solid;
-    height: auto;
+    height: 60vh;
     width: 92vw;
     /*margin: 1vh 3vw;*/
     padding: 20px;
-
+    margin: 2vh 0;
 }
 .pdf-summary{
     grid-area:pdf-summary;
@@ -119,6 +138,11 @@ font-family: 'Yantramanav', sans-serif; */
     height: auto;
 
 }
-
+summary{
+    width: 90vw;
+    height: 50vh;
+    overflow: auto;
+    margin: 20px 0;
+}
 
 }

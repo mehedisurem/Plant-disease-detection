@@ -1,0 +1,19 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %}System Block Diagram {% endblock %}
+{% block css %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'draft.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+    <div class="survey">
+        <h1 Class="typeWriter cText"><i class="redT">Dra</i><i>ft</i><i class="redT">-1</i></h1>
+        <iframe class="question" src="{% static 'PDF/Survey/group-3-draft1.pdf' %}"></iframe>
+
+    </div>
+
+   
+{% endblock %}

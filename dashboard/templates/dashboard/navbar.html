@@ -8,33 +8,34 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'navbar.css' %}">
     <script src="https://kit.fontawesome.com/2d5c01f986.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
        {% block css %} {% endblock %}
   </head>
   <body>
     <nav>
-      <div class="logo"><span class="color-red">Micro</span>pocessor <span class="color-red">Gro</span>up-<span class="color-red">3</span></div>
+        <div class="logo"><i class="color-red">Micro</i><i class="white">pocessor</i> <i class="color-red">Gro</i><i class="white">up-</i><i class="color-red">3</i></div>
       <label for="btn" class="icon">
         <span class="fa fa-bars"></span>
       </label>
       <input type="checkbox" id="btn">
-      <ul>
+      <ul >
         <li>
               <label for="btn-1" class="show">Project <i class="fa fa-light fa-angle-down"></i> </label>
-              <a href="#">Project</a>
+              <a href="">Project</a>
               <input type="checkbox" id="btn-1">
           <ul>
-            <li><a href="#">Hardware Setup</a></li>
+            <li><a href="">Hardware Setup</a></li>
             <li>
                <label for="btn-2" class="show_2">Survey <i class="fa fa-light fa-angle-down"></i></label> <!-- btn class added  -->
-               <a class="extra" href="#">Survey</a>
+               <a class="extra" href="">Survey</a>
               <input type="checkbox" id="btn-2">
                 <ul>
                     <li ><label for="btn-3" class="show_3">Pre Test Survey <i class="fa fa-light fa-angle-down"></i></label>
                     <a class="extra" href="">Pre Test Survey</a>
                     <input type="checkbox" id="btn-3">
                       <ul>
-                         <li><a href="">Responses</a> </li>
-                          <li><a href="">Questions</a> </li>
+                         <li><a href="/survey_form">Responses</a> </li>
+                          <li><a href="/survey_ques">Questions</a> </li>
                       </ul>
                     </li>
                     <li ><label for="btn-4" class="show_3">Post Test Survey <i class="fa fa-light fa-angle-down"></i></label>
@@ -48,7 +49,7 @@
             </li>
         <li><a href="">Perfomance</a></li>
         <li><a href="">Simulation</a></li>
-        <li><a href="">Proposal</a></li>
+        <li><a href="/draft">Paper Draft</a></li>
         <li><label for="btn-5" class="show_2">Components <i class="fa fa-light fa-angle-down"></i></label>
             <a class="extra" href="">Components</a>
             <input type="checkbox" id="btn-5">
@@ -70,11 +71,11 @@
         </li>
         <li>
           <label for="btn-7" class="show">Block Diagram <i class="fa fa-light fa-angle-down"></i></label>
-          <a href="#">Block Diagram </a>
+          <a href="">Block Diagram </a>
           <input type="checkbox" id="btn-7">
           <ul>
-                <li class="diagram" ><a  href="">System Block Diagram</a></li>
-                <li class="diagram" ><a  href="">Technical Block Diagram</a></li>
+                <li class="diagram" ><a  href="/system">System Block Diagram</a></li>
+                <li class="diagram" ><a  href="/hardwere">Technical Block Diagram</a></li>
         </ul>
         </li>
         <li>
@@ -84,10 +85,11 @@
               <ul>
                   <li ><a href="/surem">Surem</a></li>
                   <li ><a href="/mehenaz">Mehenaz</a></li>
-                  <li ><a href="">Istiaq</a></li>
+                  <li ><a href="/istiaq">Istiaq</a></li>
                   <li ><a href="/sadia">Sadia</a></li>
-                  <li ><a href="">Muhaiminul</a></li>
-                  <li ><a href="">Jahedul</a></li>
+                  <li ><a href="/rafi">Muhaiminul</a></li>
+                  <li ><a href="/jahedul">Jahedul</a></li>
+                  <li ><a href="/merge">Merged</a></li>
 
 
 
@@ -108,6 +110,7 @@
 {#        <i class="fa fa-light fa-angle-down"></i>#}
 {#      </p>#}
         {% endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script>

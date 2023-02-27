@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Bayon&family=Coiny&family=Kalam:wght@300&family=Noto+Serif:ital@1&family=Playball&family=Poppins:ital,wght@1,100&family=Sail&family=Signika:wght@600&family=Source+Sans+Pro:ital,wght@1,300&display=swap>);
+.plant_img{
+    height: 80vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    margin: 0 0 5vh;
+
+}
+
+.content{
+    margin: 85vh 0;
+    opacity: .8;
+    width: 70vw;
+    height: 90vh;
+    border-radius: 20px;
+
+}
+.content .title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 70px;
+    padding: 25px;
+    font-family: 'Sail', cursive;
+    margin-bottom: 3vh;
+
+}
+.content h2{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45px;
+    padding: 0 25px;
+    margin-bottom: 1.5vh;
+}
+.content h4,h3{
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;;
+    font-size: 24px;
+    line-height: 39px;
+    padding: 15px 55px;
+    margin-bottom: 1.5vh;
+}
+
+.ul-list .li-list  {
+     list-style: none;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 15px;
+    padding-left:60px;
+    font-weight: bold;
+    margin-bottom: 1.5vh;
+}
+@media all and (max-width:990px){
+    .content{
+        margin: 63vh 0;
+    }
+    .plant_img{
+        margin: 0;
+        height: 55vh;
+        width: 100vw;
+    }
+    .content .title{
+        font-size: 38px;
+        line-height: 50px;
+        padding: 10px;
+        margin-bottom: 1vh;
+    }
+    .content h2{
+        font-size: 28px;
+        line-height: 35px;
+        padding: 0 10px;
+        margin-bottom: 1vh;
+    }
+    .content h4,h3{
+        font-size: 18px;
+        line-height: 25px;
+        padding-left: 29px;
+        padding-top: 8px;
+        padding-right: 0;
+        margin-bottom: 1vh;
+    }
+
+.content{
+    margin: 85vh 0;
+    opacity: .8;
+    width: 70vw;
+    height: 90vh;
+    border-radius: 20px;
+
+}
+}
+
+@media all and (max-width:450px){
+    .content{
+        margin: 38vh 0;
+        width: 100vw;
+        height: auto;
+    }
+    .plant_img{
+        height: 30vh;
+        width: 100vw;
+    }
+    .content .title{
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 2vh;
+        /*padding: 10px;*/
+    }
+    .content h2{
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 2vh;
+    }
+    .content h4,h3{
+        font-size: 15px;
+        line-height: 23px;
+        padding-top: 5px;
+        padding-left: 15px;
+        margin-bottom: 2vh;
+        padding-right: 0;
+    }
+
+}
