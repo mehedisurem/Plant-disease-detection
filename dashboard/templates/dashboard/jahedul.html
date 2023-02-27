@@ -13,149 +13,240 @@
     {% load static %}
     <div class="Litrature">
 
-{#        <h1 class="user"><span class="red">Litera</span>ture <span class="red">Re</span>view - Jahedul</h1>#}
-{#        <div class="grid-box">#}
-{#            <div class="pdf-file">#}
-{#                <iframe class= "pdf" src="{% static 'PDF/Surem/surem-L1.pdf' %}">#}
-{#                </iframe>#}
-{#            </div>#}
-{#            <div class="pdf-summary">#}
-{#                <h2>Data Collection and Analysis Using IOT Device and Machine Learning Techniques forDisease Classification on Soybean Plant</h2>#}
-{#                <h3>Summary</h3>#}
-{#                <summary>Prospective yields have recently been decreased by infectious biotic and abiotic disorders by an average of 4%,#}
-{#                    with many farmers in developing countries experiencing yield losses of up to 100%. Identification and treatment of plant#}
-{#                    diseases are issues that affect farmers all over the world. In order to identify and assess plant illnesses from their#}
-{#                    leaves and determine the number of pods on the soyabean plant, this article employs the convolution neural network (CNN)#}
-{#                    model and bespoke object detection. They have gathered all the information on the symptoms of diseases that affect soybean plants,#}
-{#                    including Yellow Mosaic, Soybean Rust, and Bacterial Blight. Their main data sources include web scarping and the Indian Institute of#}
-{#                    Soybean Research (ICAR). Component that are used in this project are Convolution Neural network (CNN), Soybean leaf, Neural Network,#}
-{#                    Sensors, Cameras. With the aid of a neural network, they have done object detection using image processing on the data to identify the type of#}
-{#                    disease present on the leaf. Their model is trained on a TITAN RTX 24G GPU utilizing Keras with tensor Flow as a deep learning framework.#}
-{#                    After dividing the dataset into 80 20 parts, they were able to get an Excellent highest accuracy rate of 99.56 percent with the EfficientNetB0 model#}
-{#                    (80 percent data for training and 20 percent images for testing). The implemented deep-learning model offers greater prediction ability in#}
-{#                    terms of both accuracy and loss when compared to other deep learning approaches.</summary>#}
-{##}
-{#                    <h3>Reference:</h3>#}
-{#                    <h4><a class="links" href="">#}
-{#                        <ul>#}
-{#                                <li class="ref">1. Arjun, K. M. (2013). Indian agriculture status, importance and role in Indian economy. 4(4), 343-346#}
-{#                                </li>#}
-{#                                <li class="ref">2.Dalwai, A. (2018). Report of the Committee on Doubling Farmers Income. Post-production interventions:Agricultural Marketing</li>#}
-{#                                <li class="ref">3.Arora, J.; Agrawal, U. Classification of Maize leaf diseases from healthy leaves using Deep Forest.J. Artif. Intell.Syst. 2020,2</li>#}
-{#                            </ul>#}
-{##}
-{#                    </a></h4>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#        <div class="grid-box-2">#}
-{#            <div class="pdf-file">#}
-{#                <iframe class= "pdf" src="{% static 'PDF/Surem/RicePlantDisease.pdf' %}">#}
-{#                </iframe>#}
-{#            </div>#}
-{#            <div class="pdf-summary">#}
-{#                <h2>Smartphone Application for Deep Learning-Based Rice Plant Disease Detection</h2>#}
-{#                <h3>Summary</h3>#}
-{#                <summary>This research focuses on a deep learning-based system for rice disease detection that consists of a machine learning application on a cloud server and an application on a smartphone.#}
-{#                    Cloud server application is made using python programming language and smart phone application is made using React. They have collected information on a number of rice plant diseases,#}
-{#                    including Brown Spot, Leaf Blast, and Hipsa, and they have taken 1600 photos from the Kaggle dataset to use in the implementation of their method. They used 80% data for training data and 20% for testing.#}
-{#                    After implementing their method, they have found 100% train accuracy value and 60% test accuracy of 320 images.  Moreover, they discovered that Hipsa class illness identification is the most#}
-{#                    accurate when compared to other diseases. They are currently working to improve their method. Along with a function like provide recommendations on how to treat diseases in plants.</summary>#}
-{##}
-{#                    <h3>Reference:</h3>#}
-{#                    <h4><a class="links" href="https://www.researchgate.net/publication/361351168_Data_Collection_and_Analysis_Using_IOT_Device_and_Machine_Learning_Techniques_for_Disease_Classification_on_Soybean_Plant">#}
-{#                        <ul>#}
-{#                                <li class="ref">1. 1.Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops. DOI:10.1109/ECAI50035.2020.9223239#}
-{#                                </li>#}
-{#                                <li class="ref">2.Research on deep learning in apple leaf disease recognition. DOI: 10.1016/j.compag.2019.105146</li>#}
-{##}
-{#                            </ul>#}
-{##}
-{#                    </a></h4>#}
-{#            </div>#}
-{#        </div>#}
-{#        <div class="grid-box">#}
-{#            <div class="pdf-file">#}
-{#                <iframe class= "pdf" src="{% static 'PDF/Surem/sureml2.pdf' %}">#}
-{#                </iframe>#}
-{#            </div>#}
-{#            <div class="pdf-summary">#}
-{#                <h2>Plant Disease Detection Using Image Processing and Machine Learning</h2>#}
-{#                <h3>Summary</h3>#}
-{#                <summary>In this study, computer vision and machine learning approaches are proposed as a smart and effective method for crop disease identification.#}
-{#                    The suggested approach has a 93% accuracy rate for detecting 20 distinct illnesses in 5 popular plants. A Cloud based applications and For classification or detection tasks,#}
-{#                    the random forest classifier has been utilized. Decision trees are used to gain improved accuracy. Yet, they are vulnerable to overfitting issues.#}
-{#                    Hence, a random forest classifier—a collection of many decision trees—is employed to address this problem. Each tree is trained using various subsets of the entire dataset,#}
-{#                    which can prevent overfitting and increase the classifier's accuracy. They intend to carry out future work in order to deploy an intelligent robot vehicle with a powerful#}
-{#                    processor attached to it for in-situ plant disease diagnosis.</summary>#}
-{##}
-{#                    <h3>Reference:</h3>#}
-{#                    <h4><a class="links" href="">#}
-{#                        <ul>#}
-{#                                <li class="ref">1. Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops.  DOI:#}
-{#                                     10.1109/ECAI50035.2020.9223239#}
-{#                                </li>#}
-{#                                <li class="ref">2.•	2. Research on deep learning in apple leaf disease recognition 10.1016/j.compag.2019.105146<</li>#}
-{##}
-{#                            </ul>#}
-{##}
-{#                    </a></h4>#}
-{#            </div>#}
-{#        </div>#}
-{#        <div class="grid-box-2">#}
-{#            <div class="pdf-file">#}
-{#                <iframe class= "pdf" src="{% static 'PDF/Surem/RicePlantDisease.pdf' %}">#}
-{#                </iframe>#}
-{#            </div>#}
-{#            <div class="pdf-summary">#}
-{#                <h2>Smartphone Application for Deep Learning-Based Rice Plant Disease Detection</h2>#}
-{#                <h3>Summary</h3>#}
-{#                <summary>This research focuses on a deep learning-based system for rice disease detection that consists of a machine learning application on a cloud server and an application on a smartphone.#}
-{#                    Cloud server application is made using python programming language and smart phone application is made using React. They have collected information on a number of rice plant diseases,#}
-{#                    including Brown Spot, Leaf Blast, and Hipsa, and they have taken 1600 photos from the Kaggle dataset to use in the implementation of their method. They used 80% data for training data and 20% for testing.#}
-{#                    After implementing their method, they have found 100% train accuracy value and 60% test accuracy of 320 images.  Moreover, they discovered that Hipsa class illness identification is the most#}
-{#                    accurate when compared to other diseases. They are currently working to improve their method. Along with a function like provide recommendations on how to treat diseases in plants.</summary>#}
-{##}
-{#                    <h3>Reference:</h3>#}
-{#                    <h4><a class="links" href="https://www.researchgate.net/publication/361351168_Data_Collection_and_Analysis_Using_IOT_Device_and_Machine_Learning_Techniques_for_Disease_Classification_on_Soybean_Plant">#}
-{#                        <ul>#}
-{#                                <li class="ref">1. 1.Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops. DOI:10.1109/ECAI50035.2020.9223239#}
-{#                                </li>#}
-{#                                <li class="ref">2.Research on deep learning in apple leaf disease recognition. DOI: 10.1016/j.compag.2019.105146</li>#}
-{##}
-{#                            </ul>#}
-{##}
-{#                    </a></h4>#}
-{#            </div>#}
-{#        </div>#}
-{#        <div class="grid-box">#}
-{#            <div class="pdf-file">#}
-{#                <iframe class= "pdf" src="{% static 'PDF/Surem/sureml2.pdf' %}">#}
-{#                </iframe>#}
-{#            </div>#}
-{#            <div class="pdf-summary">#}
-{#                <h2>Plant Disease Detection Using Image Processing and Machine Learning</h2>#}
-{#                <h3>Summary</h3>#}
-{#                <summary>In this study, computer vision and machine learning approaches are proposed as a smart and effective method for crop disease identification.#}
-{#                    The suggested approach has a 93% accuracy rate for detecting 20 distinct illnesses in 5 popular plants. A Cloud based applications and For classification or detection tasks,#}
-{#                    the random forest classifier has been utilized. Decision trees are used to gain improved accuracy. Yet, they are vulnerable to overfitting issues.#}
-{#                    Hence, a random forest classifier—a collection of many decision trees—is employed to address this problem. Each tree is trained using various subsets of the entire dataset,#}
-{#                    which can prevent overfitting and increase the classifier's accuracy. They intend to carry out future work in order to deploy an intelligent robot vehicle with a powerful#}
-{#                    processor attached to it for in-situ plant disease diagnosis.</summary>#}
-{##}
-{#                    <h3>Reference:</h3>#}
-{#                    <h4><a class="links" href="">#}
-{#                        <ul>#}
-{#                                <li class="ref">1. Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops.  DOI:#}
-{#                                     10.1109/ECAI50035.2020.9223239#}
-{#                                </li>#}
-{#                                <li class="ref">2.•	2. Research on deep learning in apple leaf disease recognition 10.1016/j.compag.2019.105146<</li>#}
-{##}
-{#                            </ul>#}
-{##}
-{#                    </a></h4>#}
-{#            </div>#}
-{#        </div>#}
+        <h1 class="user"><i class="red">Litera</i>ture <i class="red">Re</i>view - Jahedul</h1>
+        <div class="grid-box">
+            <div class="pdf-file">
+                <iframe class= "pdf" src="{% static 'PDF/Jahedul/plant-disease-detection-using-image-processing-IJERTV9IS030114.pdf' %}">
+                </iframe>
+            </div>
+            <div class="pdf-summary">
+                <h2>Plant Disease Detection using Image Processing</h2>
+                <h3>Summary</h3>
+                <summary>Identification of plant diseases is key to preventing losses in yield and quantity of agricultural
+products. The study of plant diseases refers to the study of visually observable patterns that occur
+in plants. Plant health monitoring and disease detection are crucial for sustainable agriculture.
+Manually monitoring plant diseases is very difficult. This requires a lot of work, expertise in
+plant diseases, and additional processing time. Hence, image processing is used for plant disease
+detection by capturing images of leaves and comparing them with data sets. The data set consists
+of different plants in image format. In addition to identification, users are directed to an e-
+commerce website where rates and usage instructions for various pesticides are displayed. This
+website can be used to efficiently compare the MRP of various pesticides and purchase the one
+required for the identified disease. This paper aims to support and help greenhouse farmers in an
+efficient way.
+The method of Plant Disease Detection using Image Processing typically includes the following steps:
+1. Input image: Input images of healthy plants and plants affected by various diseases.
+These images can be obtained from various sources such as publicly available datasets,
+field surveys, or laboratory experiments.
+2. Preprocessing: The collected images need to be pre-processed to remove noise, correct
+color balance, and adjust the image size, orientation, and resolution. This step is crucial to
+ensure that the input images are consistent and suitable for analysis.
+3. Segmentation: This phase aims at simplifying the representation of an image such that it
+becomes more meaningful and easier to Analyze. As the premise of feature extraction,
+this phase is also the fundamental approach to image processing. There are various
+methods using which images can be segmented such as k-means clustering, Otsu’s
+algorithm, thresholding, etc.
+4. Feature Extraction: This step involves selecting suitable image processing techniques
+such as texture analysis, color analysis, and shape analysis to identify features that can
+differentiate between healthy and diseased plants.
+5. Feature Selection: Feature selection can be based on color, shape, and texture. Recently,
+most researchers are intending to use texture features for detecting plant diseases.
+6. Classification: The classification phase implies determining if the input image is healthy
+or diseased. If the image is found to be diseased, some existing works have further
+classified it into a number of diseases.
+A number of classifiers have been used in the past few years by researchers such as k-nearest
+neighbor (KNN), support vector machines (SVM), artificial neural network(ANN), back
+propagation neural network (BPNN), Naïve Bayes and Decision tree classifiers.
+
+The area of research for a project on Plant Disease Detection using Image Processing lies at
+the intersection of plant pathology, image processing, and machine learning. The project
+aims to leverage recent advances in computer vision and machine learning to develop
+accurate and automated methods for the early detection and diagnosis of plant diseases using
+image analysis. The use of image processing techniques can help to identify subtle
+differences in plant features that are indicative of disease symptoms, which can be difficult to
+detect using traditional methods such as visual inspection. Plant diseases are generally caused
+by infectious agents such as fungi, bacteria, and viruses. Signs of plant disease are observable
+evidence of infection and symptoms are the visible effects of these kinds of disease. Fungal
+infections cause signs like visible spores, mildew, or mold and the basic symptoms are leaf
+spots and yellowing. So, these are our observations on how to classify the various plant
+disease and how to be cautious about them. Overall, this work is implemented from scratch
+and produces a decent accuracy. The future work is to increase the number of images present
+in the predefined database and to modify the architecture in accordance with the dataset for
+achieving better accuracy.</summary>
+
+                    <h3>Reference:</h3>
+                    <h4><a class="links" href="https://www.ijert.org/plant-disease-detection-using-image-processing">
+                        <ul>
+                                <li class="ref">1. Arjun, K. M. (2013). Indian agriculture status, importance and role in Indian economy. 4(4), 343-346
+                                </li>
+                                <li class="ref">2.Dalwai, A. (2018). Report of the Committee on Doubling Farmers Income. Post-production interventions:Agricultural Marketing</li>
+                                <li class="ref">3.Arora, J.; Agrawal, U. Classification of Maize leaf diseases from healthy leaves using Deep Forest.J. Artif. Intell.Syst. 2020,2</li>
+                            </ul>
+
+                    </a></h4>
+            </div>
+        </div>
+
+        <div class="grid-box-2">
+            <div class="pdf-file">
+                <iframe class= "pdf" src="{% static 'PDF/Jahedul/Plant_Disease_Detection_and_Classification_by_Deep_LearningA_Review.pdf' %}">
+                </iframe>
+            </div>
+            <div class="pdf-summary">
+                <h2>Plant Disease Detection and Classification by Deep Learning—A Review</h2>
+                <h3>Summary</h3>
+                <summary>Plant diseases threaten global food security, causing significant economic losses and reducing
+crop yields. Early detection and accurate diagnosis of plant diseases are crucial for effective
+disease management. In recent years, deep learning methods have emerged as a promising
+approach for plant disease detection and classification. This literature review critically analyzes
+the existing research on deep learning-based plant disease detection and classification. The
+research was conducted using keywords such as plant disease detection, plant disease
+classification,deep learning, and convolutional neural networks. We reviewed studies
+published in peer-reviewed journals, conference proceedings, and books. The studies were
+analyzed based on the research questions, methods, results, and conclusions. The review of the
+literature identified a number of studies that have investigated the use of deep learning for plant
+disease detection and classification. The studies employed various deep learning techniques such
+as convolutional neural networks (CNNs), recurrent neural networks (RNNs), and generative
+adversarial networks (GANs). The studies also utilized different types of image data, including
+RGB images, hyperspectral images, and thermal images. The results of the studies show that
+deep learning-based plant disease detection and classification can achieve high accuracy rates,
+outperforming traditional methods such as visual inspection and laboratory testing. CNNs are the
+most commonly used deep learning technique, due to their ability to learn complex features and
+patterns from images. Transfer learning, ensemble learning, and unsupervised learning are the
+most commonly used deep learning algorithms. However, the studies also highlight some
+challenges and limitations of deep learning-based plant disease detection and classification. For
+example, the lack of large and diverse datasets for training deep learning models is a major
+challenge. In addition, the complexity of deep learning models and the need for significant
+computational resources can be limiting factors. So, this literature review comprehensively
+analyzes existing research on deep learning-based plant disease detection and classification. The
+results of the studies show that deep learning can achieve high accuracy rates in detecting and
+classifying plant diseases, but there are also challenges and limitations that need to be addressed.
+Future research should focus on developing large and diverse datasets, improving the efficiency
+and interpretability of deep learning models, and exploring new deep learning techniques and
+algorithms for plant disease detection and classification.</summary>
+
+                    <h3>Reference:</h3>
+                    <h4><a class="links" href="https://ieeexplore.ieee.org/document/9399342">
+                        <ul>
+                                <li class="ref">1. 1.Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops. DOI:10.1109/ECAI50035.2020.9223239
+                                </li>
+                                <li class="ref">2.Research on deep learning in apple leaf disease recognition. DOI: 10.1016/j.compag.2019.105146</li>
+
+                            </ul>
+
+                    </a></h4>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="pdf-file">
+                <iframe class= "pdf" src="{% static 'PDF/Jahedul/IRJASH_Volume 3_Issue Special Issue ICARD-2021 3S_Pages 30-33.pdf' %}">
+                </iframe>
+            </div>
+            <div class="pdf-summary">
+                <h2>Plant Disease Detection Using Deep Learning</h2>
+                <h3>Summary</h3>
+                <summary>Agriculture is very important in human life. About 60% of the population is directly or indirectly engaged
+in some form of agriculture. There is no conventional technology to detect various crop diseases in an
+agricultural environment, due to which farmers are not interested in increasing their agricultural
+productivity day by day. Crop diseases affect the growth of their respective species, so early detection is
+important. Many machine learning (ML) models have been used to detect and classify crop diseases, but
+with recent advances in a subset of ML, deep learning (DL), this area of research appears to hold much
+promise in terms of improved accuracy. The proposed method uses a convolutional neural network and
+a deep neural network to effectively and accurately detect and identify crop disease symptoms.
+Furthermore, multiple efficiency metrics are used to evaluate these techniques. This article provides a
+thorough description of DL models that are used to visualize crop diseases. Furthermore, a number of
+research gaps have been identified that could lead to greater clarity in plant disease detection, even
+before symptoms appear. The proposed approach aims to develop a convolution neural network-based
+technique for plant leaf disease detection.</summary>
+
+                    <h3>Reference:</h3>
+                    <h4><a class="links" href="https://rspsciencehub.com/article_9834_e9c3d09ae4406e80dc2981886d728cd3.pdf">
+                        <ul>
+                                <li class="ref">1. Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops.  DOI:
+                                     10.1109/ECAI50035.2020.9223239
+                                </li>
+                                <li class="ref">2.•	2. Research on deep learning in apple leaf disease recognition 10.1016/j.compag.2019.105146<</li>
+
+                            </ul>
+
+                    </a></h4>
+            </div>
+        </div>
+        <div class="grid-box-2">
+            <div class="pdf-file">
+                <iframe class= "pdf" src="{% static 'PDF/Jahedul/Paper_62-Plant_Disease_Detection (2).pdf' %}">
+                </iframe>
+            </div>
+            <div class="pdf-summary">
+                <h2>A Smart Solution for Plant Disease Detection Based on IoT</h2>
+                <h3>Summary</h3>
+                <summary>Agriculture plays an important role in human life. About 60% of the population is engaged in
+specific agriculture directly or indirectly practice. Nowadays, however, farmers due to this,
+cultivation has stopped and shifted to other sectors less adoption of automation and other factors
+such as growing demand for farm work. Farmers are therefore increasingly dependent on the
+introduction of cognitive alternatives to take advantage of technological change. In the field of
+smart precision farming, Arduino and the Internet of Things together create new dimensions.
+This proposed approach aims to develop a method of detecting plant conditions based on
+Temperature, Humidity by a DHT11 sensor as well as a Soil Moisture sensor and TCS3200 color
+sensor used to detect Plant leaves colors for the application of soil. The method combines IoT
+with Arduino by considering various features such as color, soil moisture, temperature, and
+various sensors to help. So, it can recognize leaf diseases in plants.</summary>
+
+                    <h3>Reference:</h3>
+                    <h4><a class="links" href="https://www.researchgate.net/publication/342262643_Plant_Disease_Detection_using_Internet_of_Thi
+ng_IoT">
+                        <ul>
+                                <li class="ref">1. 1.Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops. DOI:10.1109/ECAI50035.2020.9223239
+                                </li>
+                                <li class="ref">2.Research on deep learning in apple leaf disease recognition. DOI: 10.1016/j.compag.2019.105146</li>
+
+                            </ul>
+
+                    </a></h4>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="pdf-file">
+                <iframe class= "pdf" src="{% static 'PDF/Surem/sureml2.pdf' %}">
+                </iframe>
+            </div>
+            <div class="pdf-summary">
+                <h2>Plant Disease Detection Using Image Processing and Machine Learning</h2>
+                <h3>Summary</h3>
+                <summary>Plant diseases can cause significant losses to crop yields and quality. Traditional methods of
+detecting plant diseases, such as visual inspection, can be time-consuming and prone to errors.
+Therefore, there is a growing interest in developing automated systems for plant disease
+detection. In recent years, image processing and machine learning techniques have been applied
+to detect plant diseases accurately and quickly. The project will involve the following steps:
+1. Dataset Preparation: Collect a dataset of plant images with different types of diseases and
+normal plants. The dataset will be labeled with the corresponding disease type.
+2. Image Processing: Pre-processing the plant images using techniques such as noise
+reduction, segmentation, and feature extraction. These pre-processing steps will help in
+extracting meaningful information from the images and reducing noise.
+3. Machine Learning: Developing a machine learning model to classify plant images into
+different disease types. Different classifiers such as support vector machines, decision
+trees, and deep neural networks will be trained and evaluated to find the best-performing
+model.
+4. System Integration: Integrating image processing and machine learning algorithms to
+create an end-to-end system for plant disease detection. The system will take an input
+image and output the detected disease type and its severity.
+The final system will provide an accurate and fast method for detecting plant diseases, which can
+help farmers take timely action to prevent the spread of diseases and increase crop yield. The
+project will also help in overcoming the challenges of data availability, variations in imaging
+conditions, and identification of multiple diseases in a single plant.</summary>
+
+                    <h3>Reference:</h3>
+                    <h4><a class="links" href="">
+                        <ul>
+                                <li class="ref">1. Comparative Study Of Deep Learning Algorithms For Disease And Pest Detection In Rice Crops.  DOI:
+                                     10.1109/ECAI50035.2020.9223239
+                                </li>
+                                <li class="ref">2.•	2. Research on deep learning in apple leaf disease recognition 10.1016/j.compag.2019.105146<</li>
+
+                            </ul>
+
+                    </a></h4>
+            </div>
+        </div>
     </div>
 {#    <footer class="footer-section">#}
 {#        <h3><i> Documentation: Jahedul & Website : Mehedi Surem</i></h3>#}
