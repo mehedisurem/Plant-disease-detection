@@ -56,3 +56,6 @@ def survey_form(request):
 
 def survey_ques(request):
     return render(request, 'dashboard/survey-questions.html')
+
+def survey_doc(request):
+    return render(request, 'dashboard/documentation.html')
