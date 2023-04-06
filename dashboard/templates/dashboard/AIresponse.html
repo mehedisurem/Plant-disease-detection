@@ -99,14 +99,50 @@
  {#   });#}
 {#  });#}
 {#'});'#}
- fetch('/generate-text')
-        .then(response => response.json())
-        .then(data => {
-          const generatedText = data.generated_text;
-          console.log(generatedText)
-          const generatedTextElement = document.getElementById('output-text');
-          generatedTextElement.innerText = generatedText;
-        });
+{# fetech#}
+{# fetch('/AIresponse')#}
+{#        .then(response => response.json())#}
+{#        .then(data => {#}
+{#          const generatedText = data.generated_text;#}
+{#          console.log(generatedText)#}
+{#          const generatedTextElement = document.getElementById('output-text');#}
+{#          generatedTextElement.innerText = generatedText;#}
+{#        });#}
+
+ <script>
+  $(document).ready(function() {
+    $('#ai-response-form').submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: '{% url "AIresponse" %}',
+        data: $(this).serialize(),
+        success: function(response) {
+          console.log("Success response: ", response);
+          var generatedResponseText = response.generated_text;
+          console.log("Generated response text: ", generatedResponseText);
+          $('#generated-response').text(generatedResponseText);
+        },
+        error: function(response) {
+          console.log("Error response: ", response);
+          alert('Error: ' + response.responseJSON.error);
+        }
+      });
+    })};
+  });
 </script>
+
+<script>
+  fetch('/AIresponse', { method: 'GET' })
+    .then(response => response.json())
+    .then(data => {
+      const generatedText = data.generated_text;
+      console.log("Generated text: ", generatedText);
+      const generatedTextElement = document.getElementById('generated-response');
+      generatedTextElement.innerText = generatedText;
+    });
+</script>
+
+
 
 {% endblock %}

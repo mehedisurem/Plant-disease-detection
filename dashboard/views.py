@@ -78,7 +78,7 @@ def AIresponse(request):
             url = "https://api.openai.com/v1/engines/davinci/completions"
             headers = {
                 "Content-Type": "application/json",
-                "Authorization": "Bearer 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"
+                "Authorization": "Bearer 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"
             }
 
             # Define the request payload
@@ -93,6 +93,7 @@ def AIresponse(request):
 
             # Process the response data and return it as a JSON response
             response_json = response.json()
+            print('response get:', response_json)
             # print(response_json)
             generated_text = response_json["choices"][0]["text"] if "choices" in response_json else response_json.get(
                 "text", "")
