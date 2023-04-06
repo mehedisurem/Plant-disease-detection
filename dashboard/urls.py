@@ -18,5 +18,7 @@ urlpatterns = [
     path('survey_form/', views.survey_form, name="survey_form"),
     path('survey_ques/', views.survey_ques, name="survey_ques"),
     path('survey_doc/', views.survey_doc,   name="survey_doc"),
+    path('AIresponse/', views.AIresponse,   name="AIresponse"),
+    path('esp/', views.esp,   name="esp"),
 
 ]

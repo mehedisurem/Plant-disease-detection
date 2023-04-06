@@ -1,0 +1,55 @@
+#camera-iframe {
+    display: none; /* hide the iframe by default */
+    width: 95vw;
+    color: #ff0000;
+    height: 80vh;
+  }
+  a{
+    width: 95vw;
+    color: #ff0000;
+    height: 80vh;
+  }
+  .cameraDetails{
+    margin-top: 12vh;
+
+  }
+  .cameraDetails h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .cameraDetails .button-1 {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin-left: 40vw;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+  }
+
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #F082AC;
+  }

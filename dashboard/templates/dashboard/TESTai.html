@@ -1,0 +1,118 @@
+{% extends 'dashboard/navbar.html' %}
+{% block content %}
+{% extends 'dashboard/navbar.html' %}
+{% block title %}System Block Diagram {% endblock %}
+{% block css %}
+
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'AIresponse.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+
+   <div class="container  main">
+  <div class="row">
+    <div >
+      <h2 class="text-center mb-4">ChatGPT AI Response</h2>
+      <form id="ai-response-form" method="POST">
+
+        <div class="form-group">
+          <label for="input-text">Enter your text:</label> <br> <br>
+          <textarea class="form-control text-area" id="input-text" name="input_text" rows="3"></textarea>
+        </div> <br> <br>
+        <button type="submit" class="btn  button-1">Generate Response</button>
+      </form> <br>
+      <div class=" showResponse">
+        <p id="output-text">{{ generated_text }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // Handle form submission with AJAX
+  {#$(document).ready(function() {#}
+  {#  $('#input-form').submit(function(event) {#}
+  {#    event.preventDefault();#}
+  {#    $.ajax({#}
+  {#      type: 'POST',#}
+  {#      url: '{% url "AIresponse" %}',#}
+  {#      data: $(this).serialize(),#}
+  {#      success: function(response) {#}
+  {#        $('#generated-response').text(response.generated_text);#}
+  {#      },#}
+  {#      error: function(response) {#}
+  {#        alert('Error: ' + response.responseJSON.error);#}
+  {#      }#}
+  {#    });#}
+  {#  });#}
+  {#last closing tag need to be add this one "});"#}
+  {# $(document).ready(function() {#}
+  {#  $('#input-form').submit(function(event) {#}
+  {#    event.preventDefault();#}
+  {#    $.ajax({#}
+  {#      type: 'POST',#}
+  {#      url: '{% url "AIresponse" %}',#}
+  {#      data: $(this).serialize(),#}
+  {#      success: function(response) {#}
+  {#        $('#generated-response').text(response.generated_text);#}
+  {#      },#}
+  {#      error: function(response) {#}
+  {#        alert('Error: ' + response.responseJSON.error);#}
+  {#      }#}
+  {#    });#}
+  {#  });#}
+{#  $(document).ready(function() {#}
+{#  $('#input-form').submit(function(event) {#}
+{#    event.preventDefault();#}
+{#    $.ajax({#}
+{#      type: 'POST',#}
+{#      url: '{% url "AIresponse" %}',#}
+{#      data: $(this).serialize(),#}
+{#      success: function(response) {#}
+        {#var generatedResponseDiv = $('<div>').text(response.generated_text);#}
+{#          var generatedResponseText = $('<div>').text(response.generated_text).text();#}
+{##}
+{#        $('#generated-response').empty().append(generatedResponseDiv);#}
+{#      },#}
+{#      error: function(response) {#}
+{#        alert('Error: ' + response.responseJSON.error);#}
+{#      }#}
+{#    });#}
+{#  });#}
+{#"});"#}
+{#  $(document).ready(function() {#}
+{#  $('#input-form').submit(function(event) {#}
+{#    event.preventDefault();#}
+{#    $.ajax({#}
+{#      type: 'POST',#}
+{#      url: '{% url "AIresponse" %}',#}
+{#      data: $(this).serialize(),#}
+{#      success: function(response) {#}
+{#        var generatedResponseDiv = $('<div>').text(response.generated_text);#}
+{#        $('#generated-response').empty().append(generatedResponseDiv);#}
+{#      },#}
+{#      error: function(response) {#}
+{#        alert('Error: ' + response.responseJSON.error);#}
+{#      }#}
+{#    });#}
+{#  });#}
+{#'});'#}
+
+      {#fetch('/generate-text')#}
+      {#  .then(response => response.json())#}
+      {#  .then(data => {#}
+      {#    const generatedText = data.generated_text;#}
+      {#    const generatedTextElement = document.getElementById('output-text');#}
+      {#    generatedTextElement.innerText = generatedText;#}
+      {#  });#}
+
+
+
+</script>
+
+{% endblock %}
+
+
+

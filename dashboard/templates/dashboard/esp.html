@@ -1,0 +1,16 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %}Plant Disease Detection{% endblock %}
+{% block css %}
+
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'esp32.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+    <div class="cameraDetails">
+        <h1>Redirecting To Esp32 Camera </h1>
+        <iframe class="frame" id="camera-iframe" src="http://192.168.236.46/"></iframe>
+    </div>
+{% endblock %}

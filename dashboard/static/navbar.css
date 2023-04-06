@@ -15,6 +15,15 @@ nav{
 }
 .color-red{
   color: red;
+  font-family: 'Poppins', sans-serif;
+}
+.color-green{
+  color: #03D29F;
+  font-family: 'Poppins', sans-serif;
+}
+.color-white{
+  color: #dddddd;
+  font-family: 'Poppins', sans-serif;
 }
 nav:after{
   content: '';

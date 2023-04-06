@@ -1,0 +1,70 @@
+.main{
+    margin-top: 15vh;
+    margin-left: 20vw;
+    /*background-color: #5b80b2;*/
+    border: 5px solid #A1B4C2;
+    height: 70vh;
+    width: 50vw ;
+}
+.main .row{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.main #ai-response-form{
+    height: auto;
+    width: 48vw ;
+}
+.main .row .text-area{
+    margin: 0 5vw;
+    height: 10vh;
+    width: 40vw;
+
+    /*background-color: #5b80b2;*/
+    border:  3px solid black;
+}
+
+/* <button class="button-1" role="button">Button 1</button> */
+
+/* CSS */
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+.show-response{
+    height: 30vh;
+    width: 40vw;
+     margin: 0 5vw;
+    overflow: auto;
+    /*background-color: #5b80b2;*/
+    border:  3px solid black;
+
+}

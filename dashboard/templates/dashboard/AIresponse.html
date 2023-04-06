@@ -1,0 +1,112 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %}System Block Diagram {% endblock %}
+{% block css %}
+
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'AIresponse.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+{#<div class="container main">#}
+{#  <div class="row">#}
+{#    <div>#}
+{#      <h2 class="text-center mb-4">ChatGPT AI Response</h2>#}
+{#      <form id="ai-response-form" method="POST">#}
+{##}
+{#        <div class="form-group">#}
+{#          <label for="input-text">Enter your text:</label> <br> <br>#}
+{#          <textarea class="form-control text-area" id="input-text" name="input_text" rows="3"></textarea>#}
+{#        </div> <br> <br>#}
+{#        <button type="submit" class="btn button-1">Generate Response</button>#}
+{#      </form> <br>#}
+{#      <div class="show-response">#}
+{#          <p id="generated-response">{{ generated_text }}</p>#}
+{##}
+{#        <p id="generated-response"></p>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</div>#}
+{#<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>#}
+{##}
+{#<script>#}
+{# $(document).ready(function() {#}
+{#  $('#ai-response-form').submit(function(event) {#}
+{#    event.preventDefault();#}
+{#    $.ajax({#}
+{#      type: 'POST',#}
+{#      url: '{% url "AIresponse" %}',#}
+{#      data: $(this).serialize(),#}
+{#      success: function(response) {#}
+{#        console.log("Success response: ", response);#}
+{#        var generatedResponseText = response.generated_text;#}
+{#        console.log("Generated response text: ", generatedResponseText);#}
+{##}
+        {#$('#generated-response').text(generatedResponseText);#}
+{#      },#}
+{#      error: function(response) {#}
+{#        console.log("Error response: ", response);#}
+{#        alert('Error: ' + response.responseJSON.error);#}
+{#      }#}
+{#    });#}
+{#  });#}
+{#"});"#}
+{#</script>#}
+{#<script>console.log($);</script>#}
+
+<div class="container main">
+  <div class="row">
+    <div>
+      <h2 class="text-center mb-4">PROject GREENsight AI Response</h2>
+      <form id="ai-response-form" method="POST">
+
+        <div class="form-group">
+          <label for="input-text">Enter your Query's here:</label> <br> <br>
+          <textarea class="form-control text-area" id="input-text" name="input_text" rows="3"></textarea>
+        </div> <br> <br>
+        <button type="submit" class="btn button-1">Generate Response</button>
+      </form> <br>
+      <div class="show-response">
+          <p id="generated-response">{{ generated_text }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+ {#$(document).ready(function() {#}
+ {# $('#ai-response-form').submit(function(event) {#}
+ {#   event.preventDefault();#}
+ {#   $.ajax({#}
+ {#     type: 'POST',#}
+ {#     url: '{% url "AIresponse" %}',#}
+ {#     data: $(this).serialize(),#}
+ {#     success: function(response) {#}
+ {#       console.log("Success response: ", response);#}
+ {#       var generatedResponseText = response.generated_text;#}
+ {#       console.log("Generated response text: ", generatedResponseText);#}
+ {##}
+ {#       $('#generated-response').text(generatedResponseText);#}
+ {#     },#}
+ {##}
+ {#     error: function(response) {#}
+ {#       console.log("Error response: ", response);#}
+ {#       alert('Error: ' + response.responseJSON.error);#}
+ {#     }#}
+ {#   });#}
+{#  });#}
+{#'});'#}
+ fetch('/generate-text')
+        .then(response => response.json())
+        .then(data => {
+          const generatedText = data.generated_text;
+          console.log(generatedText)
+          const generatedTextElement = document.getElementById('output-text');
+          generatedTextElement.innerText = generatedText;
+        });
+</script>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'dashboard/navbar.html' %}
+{% block title %}Plant Disease Detection{% endblock %}
+{% block css %}
+
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'esp32.css' %}">
+
+
+{% endblock %}
+{% block body %}
+    {% load static %}
+{<div class="cameraDetails">
+    <h1>Load IP Address Webpage Example</h1>
+    <button id="connect-btn button-1">Connect to Camera</button>
+    <iframe class="frame" id="camera-iframe" src=""></iframe>
+  </div>
+    <script>
+      // add event listener to button
+      document.getElementById("connect-btn").addEventListener("click", function() {
+        // show the iframe when button is clicked
+        document.getElementById("camera-iframe").style.display = "block";
+      });
+    </script>
+
+{% endblock %}
